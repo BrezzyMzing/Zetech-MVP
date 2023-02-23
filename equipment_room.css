@@ -1,0 +1,139 @@
+/* Body styles */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #ff69b4;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 1px 1px #333;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #333;
+}
+
+/* Hero section styles */
+.hero-section {
+  background-color: #fff;
+  color: #333;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero-section h2 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 1px 1px #fff;
+}
+
+.hero-section p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.button {
+  background-color: #ff69b4;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+/* Equipment list section styles */
+.equipment-list-section {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.equipment-list-section h2 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 1px 1px #fff;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #ff69b4;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #666;
+}
+
+a.book-now {
+  background-color: #ff69b4;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+}
+
+a.book-now:hover {
+  background-color: #333;
+}

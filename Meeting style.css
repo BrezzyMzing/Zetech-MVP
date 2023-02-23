@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>University School Meeting Rooms</title>
+    <style>
+      body {
+        background-color: #F1D2E7;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: #4D4DFF;
+      }
+      
+      h2 {
+        font-size: 24px;
+        margin-top: 30px;
+        color: #FF69B4;
+      }
+      
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+        border: 5px solid #FF69B4;
+      }
+      
+      p {
+        text-align: justify;
+        margin: 10px 20px;
+        line-height: 1.5;
+        color: #4D4DFF;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Meeting Rooms</h1>
+    <p>Here are some of the meeting rooms available at our university school:</p>
+    
+    <h2>Room 1</h2>
+    <img src="room1.jpg" alt="Meeting Room 1">
+    <p>Description of Meeting Room 1.</p>
+    
+    <h2>Room 2</h2>
+    <img src="room2.jpg" alt="Meeting Room 2">
+    <p>Description of Meeting Room 2.</p>
+    
+    <h2>Room 3</h2>
+    <img src="room3.jpg" alt="Meeting Room 3">
+    <p>Description of Meeting Room 3.</p>
+    
+    <!-- Add more rooms as needed -->
+    
+  </body>
+</html>

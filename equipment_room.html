@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zetech University Equipment Room</title>
+    <link rel="stylesheet" href="equipment_room.css">
+</head>
+<body>
+    <header>
+        <h1>Zetech University Equipment Room</h1>
+        <nav>
+            <ul>
+                <li><a href="ZETECH MVP.html">Home</a></li>
+                <li><a href="#">Equipment List</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <h2>Welcome to Zetech University Equipment Room</h2>
+            <p>We provide a wide range of equipment to cater to the needs of students and staff at Zetech University. Browse our equipment list and book the equipment you need for your project.</p>
+            <a href="#" class="button">View Equipment List</a>
+        </section>
+    
+        <section class="equipment-list-section">
+            <h2>Equipment List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Equipment Name</th>
+                        <th>Available Quantity</th>
+                        <th>Booking Status</th>
+                        <th>Book Now</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        // Connect to the database
+                        $conn = mysqli_connect('localhost', 'username', 'password', 'database_name');
+    
+                        // Check connection and handle errors
+                        if (!$conn) {
+                            die("Connection failed: " . mysqli_connect_error());
+                        }
+    
+                        // Query the equipment table and handle errors
+                        $sql = "SELECT * FROM equipment";
+                        $result = mysqli_query($conn, $sql);
+                        if (!$result) {
+                            die("Error querying database: " . mysqli_error($conn));
+                        }
+    
+                        // Loop through the results and display them in the table
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            echo "<tr>";
+                            echo "<td>" . htmlspecialchars($row['name']) . "</td>";
+                            echo "<td>" . htmlspecialchars($row['quantity']) . "</td>";
+                            echo "<td>" . ($row['quantity'] > 0 ? 'Available' : 'Unavailable') . "</td>";
+                            echo "<td>" . ($row['quantity'] > 0 ? '<a href="booking.php?id=' . htmlspecialchars($row['id']) . '">Book Now</a>' : '') . "</td>";
+                            echo "</tr>";
+                        }
+    
+                        // Close the database connection
+                        mysqli_close($conn);
+                    ?>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    </body>
+</html>    

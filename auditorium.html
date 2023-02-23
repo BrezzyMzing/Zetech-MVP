@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>School Auditorium</title>
+	<link rel="stylesheet" href="auditorium.css">
+</head>
+<body>
+	<header>
+		<h1>School Auditorium</h1>
+		<nav>
+			<ul>
+				<li><a href="ZETECH MVP.html">Home</a></li>
+				<li><a href="#">Events</a></li>
+				<li><a href="#">Booking</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main>
+        <section class="hero-section">
+            <h2>Welcome to Our Auditorium</h2>
+            <p>Our auditorium is equipped with state-of-the-art facilities, including a stage, lighting, and sound system. It is the perfect venue for your school events, concerts, and performances.</p>
+            <a href="#" class="button">Learn More</a>
+        </section>
+    
+        <section class="events-section">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>
+                    <h3>Annual School Concert</h3>
+                    <p>Date: 25th March 2023</p>
+                    <a href="#" class="button">Book Now</a>
+                </li>
+                <li>
+                    <h3>Science Fair</h3>
+                    <p>Date: 15th May 2023</p>
+                    <a href="#" class="button">Book Now</a>
+                </li>
+                <li>
+                    <h3>Drama Competition</h3>
+                    <p>Date: 30th June 2023</p>
+                    <a href="#" class="button">Book Now</a>
+                </li>
+            </ul>
+        </section>
+    
+        <section class="booking-section">
+            <h2>Booking</h2>
+            <p>To book our auditorium for your event, please fill out the booking form below and our team will get back to you as soon as possible.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+    
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+    
+                <label for="event-time">Event Time:</label>
+                <input type="time" id="event-time" name="event-time" required>
+    
+                <label for="event-type">Event Type:</label>
+                <select id="event-type" name="event-type" required>
+                    <option value="">Select Event Type</option>
+                    <option value="Concert">Concert</option>
+                    <option value="Performance">Performance</option>
+                    <option value="Competition">Competition</option>
+                    <option value="Other">Other</option>
+                </select>
+    
+                <label for="additional-info">Additional Information:</label>
+                <textarea id="additional-info" name="additional-info"></textarea>
+    
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

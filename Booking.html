@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Resource Booking System</title>
+    <link rel="stylesheet" href="Booking style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Resource Booking System</h1>
+      <form>
+        <label for="resource-type">Select Resource Type:</label>
+        <select id="resource-type" name="resource-type">
+          <option value="laboratory">Laboratory</option>
+          <option value="auditorium">Auditorium</option>
+          <option value="school-grounds">School Grounds</option>
+        </select>
+        <label for="date">Date:</label>
+        <input type="text" id="date" name="date" placeholder="Enter date">
+        <label for="time">Time:</label>
+        <input type="text" id="time" name="time" placeholder="Enter time">
+        <input type="submit" value="Book Resource">
+      </form>
+    </div>
+  </body>
+</html>
